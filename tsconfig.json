@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "es2019",
+    "module": "CommonJS",
+    "lib": [
+      "es2019",
+      "dom"
+    ],
+    "outDir": "dist",
+    "removeComments": true,
+    "inlineSources": true,
+    "inlineSourceMap": true
+  },
+  "include": [
+    "./src/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "runner.ts"
+  ]
+}
