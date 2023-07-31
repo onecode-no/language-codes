@@ -18,6 +18,10 @@ interface ILanguageResultMap {
     [key: string]: ILanguageCodeResultItem;
 }
 
+interface IParsingOptions{
+    minScore?: number|25;
+}
+
 const rateLanguageCodeItem = (
     normalizedInput: string,
     item: ILanguageCodeItem,
@@ -89,6 +93,7 @@ const getPriority = (
  */
 export const parseLanguageCode = async (
     input: string,
+    // options: IParsingOptions
 ): Promise<ILanguageResultMap> => {
     /**@type {Object<String, Object>} **/
     const allCodes: ILanguageMap = await import('./all.json');

@@ -13,7 +13,7 @@ Here is the simple usage for usage with npm:
 ## Usage
 
 ```js
-import {parseLanguageCode} from '~onecode-no/language-codes';
+import {parseLanguageCode} from 'language-codez';
 
 ['en', 'EN-U', 'US', 'NO', 'NB-no', 'nb', 'es-es', 'lv', 'lv-l'].forEach(key => {
     parseLanguageCode(key)
